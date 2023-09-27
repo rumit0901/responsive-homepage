@@ -6,45 +6,39 @@
     --light-blue-color: #6F7DFB;   
 }
 
- *,
- *::after,
- *::before {
-    box-sizing: border-box; /* This make padding and the border of the element inside the width and height of the element*/
- }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
- body {
+body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
- }
+    font-family: Poppins;
+}
 
- .btn {
+.btn {
+    display: inline-flex;
     padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
     border-radius: 24px;
-    background: #023047;
     color: #FFF;
-    display: inline-block;
     font-size: 18px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
     text-decoration: none;
-    position: relative;
- }
+}
 
- .btn.dark {
+.btn.dark {
     background-color: var(--dark-blue-color);
- }
+}
 
- .btn.light {
+.btn.light {
     background-color: var(--orange-color);
- }
+}
 
- .btn.enrol-icon::before {
+.btn.enrol-icon::before {
     content: url('images/enrol-icon.svg');
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    transform: translateY(-50%);
- }
-
- .btn.enrol-icon {
-    padding-left: 60px;
- }
+}
